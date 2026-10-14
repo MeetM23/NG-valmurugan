@@ -30,7 +30,7 @@ export function Header() {
         </Link>
 
         <nav aria-label="Primary" className="hidden xl:block">
-          <ul className="flex items-center gap-[18px] whitespace-nowrap text-[12.5px] font-medium text-ink">
+          <ul className="flex items-center gap-4 whitespace-nowrap text-[12.5px] font-medium text-ink">
             {NAV_ITEMS.map((item) => {
               const active = isActive(item.href);
               return (

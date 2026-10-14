@@ -29,7 +29,9 @@ export const NAV_ITEMS: NavItem[] = [
   { label: "Products", href: "/products" },
   { label: "International Business", href: "/international-business" },
   { label: "Quality", href: "/quality" },
-  { label: "Infrastructure, Research & Downloads", href: "/infrastructure" },
+  { label: "Infrastructure", href: "/infrastructure" },
+  { label: "Markets", href: "/markets" },
+  { label: "Downloads", href: "/downloads" },
   { label: "Contact Us", href: "/contact" },
 ];
 

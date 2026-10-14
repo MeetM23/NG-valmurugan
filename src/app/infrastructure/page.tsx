@@ -174,7 +174,7 @@ export default function InfrastructurePage() {
           title="Downloads"
           sub="Documents at Your Fingertips"
           text="Access our company profile, product brochures, technical information and other resources to learn more about our solutions and capabilities."
-          cta={{ label: "Browse All Downloads", href: "#downloads" }}
+          cta={{ label: "Browse All Downloads", href: "/downloads" }}
         />
         <DownloadsGrid docs={DOWNLOADS} />
       </section>

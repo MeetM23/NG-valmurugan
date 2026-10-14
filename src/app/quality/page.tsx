@@ -140,7 +140,7 @@ export default function QualityPage() {
             <p className="text-[12px] text-muted">
               Our products comply with national and international quality, safety and environmental standards.
             </p>
-            <Button href="/infrastructure#downloads" variant="outline" size="sm" className="shrink-0">
+            <Button href="/downloads" variant="outline" size="sm" className="shrink-0">
               View Certificates
             </Button>
           </div>

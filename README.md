@@ -19,7 +19,8 @@ npm run build && npm start
 | `/products` | Products (category filter) |
 | `/international-business` | International Business |
 | `/quality` | Quality |
-| `/infrastructure` | Infrastructure, Research & Downloads (downloads filter) |
+| `/infrastructure` | Infrastructure, research and downloads overview |
+| `/markets`, `/downloads` | Markets We Serve, Downloads |
 | `/contact` | Contact Us (enquiry form, map) |
 | `/privacy-policy`, `/terms`, `/sitemap-page` | Footer pages (Privacy/Terms are placeholders) |
 

@@ -181,7 +181,7 @@ export default function ManufacturingPage() {
               <strong className="font-semibold">Note:</strong> This is a key list of major equipment. For complete
               equipment details, please refer to our detailed facility documentation.
             </p>
-            <Button href="/infrastructure#downloads" variant="outline" size="sm" className="shrink-0">
+            <Button href="/downloads" variant="outline" size="sm" className="shrink-0">
               View Complete Equipment List
             </Button>
           </div>
