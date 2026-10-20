@@ -1,4 +1,4 @@
-import type { Download, NavItem } from "@/types";
+import type { Download, NavGroup, NavItem } from "@/types";
 
 export const SITE = {
   name: "Velmurugan Fertiliser Company",
@@ -31,6 +31,49 @@ export const NAV_ITEMS: NavItem[] = [
   { label: "Quality", href: "/quality" },
   { label: "Infrastructure", href: "/infrastructure" },
   { label: "Markets", href: "/markets" },
+  { label: "Downloads", href: "/downloads" },
+  { label: "Contact Us", href: "/contact" },
+];
+
+/** Grouped structure used by the header; NAV_ITEMS stays flat for the footer and sitemap. */
+export const NAV_GROUPS: NavGroup[] = [
+  { label: "Home", href: "/" },
+  {
+    label: "About Us",
+    href: "/about",
+    children: [
+      { label: "Company Profile", href: "/about" },
+      { label: "Infrastructure", href: "/infrastructure" },
+    ],
+  },
+  { label: "Products", href: "/products" },
+  {
+    label: "Manufacturing & Quality",
+    href: "/manufacturing",
+    children: [
+      { label: "Manufacturing", href: "/manufacturing" },
+      { label: "Quality", href: "/quality" },
+    ],
+  },
+  {
+    label: "Markets",
+    href: "/markets",
+    children: [
+      { label: "Markets We Serve", href: "/markets" },
+      { label: "International Business", href: "/international-business" },
+    ],
+  },
+  { label: "Downloads", href: "/downloads" },
+  { label: "Contact Us", href: "/contact" },
+];
+
+/** Only the key pages; everything else is reachable from the header menu and the sitemap. */
+export const FOOTER_LINKS: NavItem[] = [
+  { label: "Home", href: "/" },
+  { label: "About Us", href: "/about" },
+  { label: "Products", href: "/products" },
+  { label: "Manufacturing", href: "/manufacturing" },
+  { label: "International Business", href: "/international-business" },
   { label: "Downloads", href: "/downloads" },
   { label: "Contact Us", href: "/contact" },
 ];

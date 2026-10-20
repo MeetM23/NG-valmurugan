@@ -27,10 +27,6 @@ export function TopBar() {
             <Mail aria-hidden className="size-3.5 text-brand-400" />
             {SITE.exportEmail}
           </a>
-          <span className="flex items-center gap-1.5" aria-label="Language: English">
-            <Globe aria-hidden className="size-3.5" />
-            EN
-          </span>
         </div>
       </div>
     </div>

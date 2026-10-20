@@ -2,7 +2,8 @@ import type { LucideIcon } from "lucide-react";
 
 export interface FeatureItem {
   icon: LucideIcon;
-  /** Label lines as set in the reference; rendered on separate lines. */
+  /** Label lines as set in the reference; rendered on s
+   * eparate lines. */
   lines: string[];
 }
 
@@ -37,7 +38,7 @@ export function FeatureStrip({ items, layout = "inline", className = "" }: Featu
               {lines.map((l) => (
                 <span key={l} className="block">
                   {l}
-                </span>
+                </span> 
               ))}
             </span>
           </li>

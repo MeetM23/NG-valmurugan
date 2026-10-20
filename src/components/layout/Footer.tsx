@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, Mail, MapPin, MessageCircle, Phone } from "lucide-react";
-import { FOOTER_PRODUCTS, NAV_ITEMS, SITE } from "@/constants/site";
+import { FOOTER_LINKS, FOOTER_PRODUCTS, SITE } from "@/constants/site";
 import { SocialIcons } from "@/components/ui/SocialIcons";
 
 const heading = "mb-4 text-[15px] font-semibold text-white";
@@ -10,7 +10,7 @@ const linkCls = "text-[13px] text-white/80 transition-colors hover:text-white";
 export function Footer() {
   return (
     <footer className="overflow-x-clip bg-brand-900 text-white">
-      <div className="container-page grid gap-10 py-12 md:grid-cols-2 lg:grid-cols-[1.3fr_1fr_1fr_1.45fr_1fr]">
+      <div className="container-page grid gap-10 py-12 md:grid-cols-2 lg:grid-cols-[1.3fr_1fr_1fr_1.45fr]">
         <div>
           <Image
             src="/images/logo-footer.png"
@@ -35,7 +35,7 @@ export function Footer() {
         <nav aria-label="Quick links">
           <h2 className={heading}>Quick Links</h2>
           <ul className="space-y-2.5">
-            {NAV_ITEMS.map((i) => (
+            {FOOTER_LINKS.map((i) => (
               <li key={i.href}>
                 <Link href={i.href} className={linkCls}>
                   {i.label}
@@ -82,14 +82,11 @@ export function Footer() {
           >
             Request a Call Back <ArrowRight aria-hidden className="size-4" />
           </Link>
-        </div>
-
-        <div className="hidden items-center justify-end lg:flex">
-          <p aria-hidden className="relative -rotate-6 whitespace-nowrap font-script text-[22px] leading-snug text-white/95">
+          <p aria-hidden className="relative mt-9 -rotate-3 whitespace-nowrap font-script text-[22px] leading-snug text-white/95">
             Together for
             <br />
             <span className="ml-3">a Greener Tomorrow</span>
-            <svg viewBox="0 0 24 24" className="absolute -right-7 -top-3 size-8 rotate-12 fill-brand-500">
+            <svg viewBox="0 0 24 24" className="absolute -top-3 left-[210px] size-8 rotate-12 fill-brand-500">
               <path d="M20 3c-9 0-15 4-15 11 0 1.4.3 2.7.9 3.7C7.4 14 11 11 15 9.5 11.5 12 8.5 15.5 7 19.4c1.3.9 2.9 1.4 4.6 1.4C18 20.8 20 12 20 3Z" />
             </svg>
           </p>

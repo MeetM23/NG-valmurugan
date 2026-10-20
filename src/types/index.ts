@@ -3,6 +3,10 @@ export interface NavItem {
   href: string;
 }
 
+export interface NavGroup extends NavItem {
+  children?: NavItem[];
+}
+
 export interface Download {
   title: string;
   description: string;
