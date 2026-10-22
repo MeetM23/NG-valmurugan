@@ -18,7 +18,7 @@ export function Footer() {
             width={420}
             height={120}
             className="h-[60px] w-auto"
-          />
+          /> 
           <p className="mt-5 flex gap-2 text-[13px] leading-relaxed text-white/85">
             <MapPin aria-hidden className="mt-0.5 size-4 shrink-0 text-brand-400" />
             <span>
